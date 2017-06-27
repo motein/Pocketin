@@ -1,6 +1,1 @@
-Git is a distributed version control system.
-Git is free.
-What is GPL?
-Git has a mutable index called stage.
-Git tracks changes of files.
-Jim is very stupid.
+This project is used to store some useful materials. Then I can link them to some other places.

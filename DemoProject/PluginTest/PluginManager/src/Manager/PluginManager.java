@@ -25,10 +25,28 @@ public class PluginManager {
 		return manager;
 	}
 	
-//	public <T> T getPlugin(String className, Class<T> required) {
-//		Class<?> cls = null;
-////		try {
-////			cls = pluginClassLoader.loadClass(className);
-////		}
-//	}
+	public <T> T getPlugin(String className, Class<T> required) {
+		Class<?> cls = null;
+		try {
+			cls = pluginClassLoader.loadClass(className);
+		} catch (ClassNotFoundException e) {
+			throw new IllegalArgumentException("can not find class:"+className, e);
+		}
+		
+		if (required.isAssignableFrom(cls)) {
+			try {
+				return (T) cls.newInstance();
+			} catch (Exception e) {
+				throw new IllegalArgumentException("can not newInstance class:"+className, e);
+			}
+		}
+		
+		throw new IllegalArgumentException("class:"+className+" not sub class of "+required);
+	}
+	
+	public void addExternalJar(String basePath) {
+		if (StringUtils.isEmpty(basePath)) {
+			
+		}
+	}
 }

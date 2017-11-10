@@ -2,3 +2,9 @@
 /PluginTest/PluginManager/bin/*/
 /PluginTest/.metadata/*/
 /PluginTest/.recommenders/*/
+/LoggerTest/.metadata/*/
+/LoggerTest/.recommenders/*/
+/LoggerTest/LoggerUtil/bin/*/
+/LoggerTest/MemoryHanlder/bin/*/
+/LoggerTest/SocketHanlder/bin/*/
+/LoggerTest/Libs/log4j-package/*/

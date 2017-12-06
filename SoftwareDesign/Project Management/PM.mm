@@ -1,6 +1,6 @@
 <map version="1.0.1">
 <!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
-<node CREATED="1511858211146" ID="ID_410272689" MODIFIED="1511858245819" TEXT="Project Management">
+<node CREATED="1511858211146" ID="ID_410272689" MODIFIED="1511878246209" TEXT="Project Management">
 <node CREATED="1511858252257" ID="ID_982984653" MODIFIED="1511858257948" POSITION="right" TEXT="Introduction"/>
 <node CREATED="1511858258642" ID="ID_303843780" MODIFIED="1511858281700" POSITION="right" TEXT="Project Life Cycle and Organization"/>
 <node CREATED="1511858292104" ID="ID_1050047984" MODIFIED="1511858309955" POSITION="right" TEXT="Project Management Processes for A Project"/>

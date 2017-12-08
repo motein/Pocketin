@@ -12,7 +12,7 @@
   </body>
 </html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1512625204943" ID="ID_212729508" MODIFIED="1512625526091" POSITION="left" TEXT="Introduction">
+<node CREATED="1512625204943" FOLDED="true" ID="ID_212729508" MODIFIED="1512696306563" POSITION="left" TEXT="Introduction">
 <icon BUILTIN="full-0"/>
 <node CREATED="1512625176362" ID="ID_238231898" MODIFIED="1512625193879" TEXT="AJAX = Asynchronous JavaScript And XML"/>
 <node CREATED="1512625244726" ID="ID_1867857521" MODIFIED="1512625252688" TEXT="Not a programming language"/>
@@ -34,7 +34,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1512625510369" ID="ID_1747257774" MODIFIED="1512626289504" POSITION="right" TEXT="XMLHttp">
+<node CREATED="1512625510369" FOLDED="true" ID="ID_1747257774" MODIFIED="1512696308062" POSITION="right" TEXT="XMLHttp">
 <icon BUILTIN="full-1"/>
 <node CREATED="1512625558792" ID="ID_1231989198" MODIFIED="1512625587733" TEXT="All modern browsers support the XMLHttpRequest object."/>
 <node CREATED="1512625604943" ID="ID_909105076" MODIFIED="1512625634379" TEXT="The XMLHttpRequest object can be used to exchange data with a server behind the scenes."/>
@@ -187,8 +187,7 @@
       pwd: optional user password
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512631040056" ID="ID_961984001" MODIFIED="1512631047085" TEXT="send()">
@@ -205,8 +204,7 @@
       Used for GET request
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512631052838" ID="ID_927588274" MODIFIED="1512631057969" TEXT="send(string)">
@@ -223,8 +221,7 @@
       Used for POST request
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512631058405" ID="ID_582639599" MODIFIED="1512631067569" TEXT="setRequestHeader()">
@@ -261,8 +258,7 @@
       4: request finished and response is ready
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512631864894" ID="ID_1064728420" MODIFIED="1512631871913" TEXT="responseText">
@@ -294,16 +290,15 @@
       For a complete list to to the Http Messages Reference
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1512631880087" ID="ID_1081944907" MODIFIED="1512631883794" TEXT="statusText">
+<node CREATED="1512631880087" FOLDED="true" ID="ID_1081944907" MODIFIED="1512636082569" TEXT="statusText">
 <node CREATED="1512632103833" ID="ID_1956331802" MODIFIED="1512632126658" TEXT="Returns the status-text(e.g. &quot;OK&quot; or &quot;NOT Found&quot;)"/>
 </node>
 </node>
 </node>
-<node CREATED="1512632259847" ID="ID_1793431133" MODIFIED="1512632270981" POSITION="right" TEXT="Request">
+<node CREATED="1512632259847" FOLDED="true" ID="ID_1793431133" MODIFIED="1512696309161" POSITION="right" TEXT="Request">
 <icon BUILTIN="full-2"/>
 <node CREATED="1512632281263" FOLDED="true" ID="ID_452493639" MODIFIED="1512632568255" TEXT="GET Request">
 <node CREATED="1512632311974" ID="ID_97258957" MODIFIED="1512632412408">
@@ -319,12 +314,11 @@
       <font face="Sitka Text">&#160;&#160;xhttp.send();</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1512632292222" ID="ID_1169471909" MODIFIED="1512632296681" TEXT="POST Request">
-<node CREATED="1512632385085" FOLDED="true" ID="ID_1171150418" MODIFIED="1512632565758" TEXT="Demo1">
+<node CREATED="1512632292222" ID="ID_1169471909" MODIFIED="1512635715854" TEXT="POST Request">
+<node CREATED="1512632385085" ID="ID_1171150418" MODIFIED="1512635716707" TEXT="Demo1">
 <node CREATED="1512632390404" ID="ID_1208415150" MODIFIED="1512632400665">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -338,11 +332,10 @@
       <font face="Sitka Text">&#160;&#160;xhttp.send();</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1512632453571" FOLDED="true" ID="ID_1453566260" MODIFIED="1512632565055" TEXT="Demo2">
+<node CREATED="1512632453571" ID="ID_1453566260" MODIFIED="1512635719484" TEXT="Demo2">
 <node CREATED="1512632457019" ID="ID_1220977641" MODIFIED="1512632467809">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -359,13 +352,12 @@
       <font face="Sitka Text">&#160;&#160;xhttp.send(&quot;fname=Henry&amp;lname=Ford&quot;);</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
 </node>
-<node CREATED="1512632571978" ID="ID_407658498" MODIFIED="1512632582358" POSITION="left" TEXT="Response">
+<node CREATED="1512632571978" FOLDED="true" ID="ID_407658498" MODIFIED="1512696311481" POSITION="left" TEXT="Response">
 <icon BUILTIN="full-3"/>
 <node CREATED="1512632966283" ID="ID_1415024641" MODIFIED="1512632978343" TEXT="Server Response Properties">
 <node CREATED="1512632995403" ID="ID_1566039833" MODIFIED="1512633006158" TEXT="responseText">
@@ -409,8 +401,7 @@
       <font face="Courier New">&#160;&#160;};</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512632784325" FOLDED="true" ID="ID_1841406660" MODIFIED="1512633402952" TEXT="Demo2 Callback">
@@ -508,8 +499,7 @@
       <font face="Courier New">&lt;/html&gt;</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512633136072" FOLDED="true" ID="ID_834621595" MODIFIED="1512633258834" TEXT="Demo3 XML data">
@@ -595,8 +585,7 @@
       <font face="Sitka Text">&lt;/html&gt;</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512633260486" FOLDED="true" ID="ID_1466141333" MODIFIED="1512633368745" TEXT="Demo4 getAllResponseHeaders()">
@@ -640,8 +629,7 @@
       <font face="Sitka Text">&lt;/script&gt;</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 <node CREATED="1512633314685" FOLDED="true" ID="ID_648265308" MODIFIED="1512633367488" TEXT="Demo5 getResponseHeader">
@@ -685,12 +673,12 @@
       <font face="Courier New">&lt;/script&gt;</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>
-<node CREATED="1512633497825" FOLDED="true" ID="ID_441654630" MODIFIED="1512634810288" POSITION="left" TEXT="XML File">
+<node CREATED="1512633497825" FOLDED="true" ID="ID_441654630" MODIFIED="1512697058799" POSITION="left" TEXT="XML File">
+<icon BUILTIN="full-4"/>
 <node CREATED="1512633513681" ID="ID_620074773" MODIFIED="1512633525819">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -776,8 +764,7 @@
       <font face="Courier New">&lt;/script&gt;</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>

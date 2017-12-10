@@ -10,8 +10,7 @@
       <font size="4" color="#ff0033">Web Services</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
 <node CREATED="1512697223269" ID="ID_693966914" MODIFIED="1512697235980" POSITION="right" TEXT="What are Web Services?">
 <node CREATED="1512697826980" ID="ID_295052682" MODIFIED="1512707376208" TEXT="Is available over the Internet or private (intranet) networks."/>
@@ -44,6 +43,59 @@
 <node CREATED="1512708919906" ID="ID_1420316421" MODIFIED="1512708936772" TEXT="Supports Remote Procedure Calls (RPCs)"/>
 <node CREATED="1512708948457" ID="ID_1304253506" MODIFIED="1512708960556" TEXT="Supports Document Exchange"/>
 </node>
-<node CREATED="1512708971657" ID="ID_1503714204" MODIFIED="1512708986707" POSITION="right" TEXT="Web Services - Architecture"/>
+<node CREATED="1512708971657" ID="ID_1503714204" MODIFIED="1512708986707" POSITION="right" TEXT="Web Services - Architecture">
+<node CREATED="1512731094579" ID="ID_1314736640" MODIFIED="1512731102299" TEXT="Web Service Roles">
+<node CREATED="1512731106584" ID="ID_1413051060" MODIFIED="1512731114033" TEXT="Service Provider"/>
+<node CREATED="1512731114342" ID="ID_633684431" MODIFIED="1512731119648" TEXT="Service Requestor"/>
+<node CREATED="1512731119978" ID="ID_981955076" MODIFIED="1512731128693" TEXT="Service Registry"/>
+</node>
+<node CREATED="1512731135747" ID="ID_1116181951" MODIFIED="1512731145251" TEXT="Web Service Protocol Stack">
+<node CREATED="1512731146429" ID="ID_285334588" MODIFIED="1512731153710" TEXT="Service Transport"/>
+<node CREATED="1512731154126" ID="ID_856792257" MODIFIED="1512731158226" TEXT="XML MEssaging"/>
+<node CREATED="1512731158631" ID="ID_494914904" MODIFIED="1512731163608" TEXT="Service Description"/>
+<node CREATED="1512731171432" ID="ID_399158441" MODIFIED="1512731179156" TEXT="Service Discovery"/>
+</node>
+<node CREATED="1512731185429" ID="ID_1200966603" MODIFIED="1512731196226" TEXT="Few Words about Service Transport">
+<node CREATED="1512731199914" ID="ID_754661346" MODIFIED="1512731226474" TEXT="Hyper Text Transfer Protocol"/>
+<node CREATED="1512731227718" ID="ID_377626881" MODIFIED="1512731243260" TEXT="Block Extensible Exchange Protocol"/>
+</node>
+</node>
+<node CREATED="1512731428730" ID="ID_987995322" MODIFIED="1512731438651" POSITION="right" TEXT="Web Services - Componets">
+<node CREATED="1512731468582" ID="ID_465584766" MODIFIED="1512731474801" TEXT="XML-RPC"/>
+<node CREATED="1512731475119" ID="ID_929514757" MODIFIED="1512731478238" TEXT="SOAP"/>
+<node CREATED="1512731478530" ID="ID_869524391" MODIFIED="1512731485544" TEXT="WSDL"/>
+<node CREATED="1512731485887" ID="ID_595548773" MODIFIED="1512731490619" TEXT="UDDI"/>
+</node>
+<node CREATED="1512732098422" ID="ID_407577490" MODIFIED="1512732112066" POSITION="right" TEXT="Web Services-Security">
+<node CREATED="1512732114077" ID="ID_1693414975" MODIFIED="1512732122228" TEXT="Confidentiality"/>
+<node CREATED="1512732122606" ID="ID_934049790" MODIFIED="1512732127494" TEXT="Authentication"/>
+<node CREATED="1512732127744" ID="ID_655323672" MODIFIED="1512732132746" TEXT="Network Security"/>
+</node>
+<node CREATED="1512825269126" ID="ID_291297888" MODIFIED="1512825296451" POSITION="right" TEXT="Web Services-Summary">
+<node CREATED="1512825305652" ID="ID_1298771977" MODIFIED="1512825308925" TEXT="WSDL">
+<node CREATED="1512825332035" ID="ID_1753886636" MODIFIED="1512825439666">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      WSDL is an XML-based language fro describing web services and how to access them.
+    </p>
+    <p>
+      WSDL decribes a web service, along with the message format and protocol details for the web service.
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1512825309249" ID="ID_215715537" MODIFIED="1512825311718" TEXT="UDDI">
+<node CREATED="1512825463437" ID="ID_1584554890" MODIFIED="1512825500973" TEXT="UDDI  is an XML-based standard for describing, publishing, and finding web services."/>
+</node>
+<node CREATED="1512825311978" ID="ID_680944252" MODIFIED="1512825314097" TEXT="SOAP">
+<node CREATED="1512825505839" ID="ID_430916899" MODIFIED="1512825538096" TEXT="SOAP is a simple XML-based protocol that allows applications to exchange information over HTTP."/>
+</node>
+</node>
 </node>
 </map>

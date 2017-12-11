@@ -17,7 +17,7 @@
 <node CREATED="1512922163547" ID="ID_1677517595" MODIFIED="1512922231308" TEXT="It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast."/>
 <node CREATED="1512922255835" ID="ID_752796737" MODIFIED="1512922317760" TEXT="Can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply."/>
 </node>
-<node CREATED="1512922093229" FOLDED="true" ID="ID_131248346" MODIFIED="1512957271386" POSITION="right" TEXT="Basics">
+<node CREATED="1512922093229" ID="ID_131248346" MODIFIED="1513003104576" POSITION="right" TEXT="Basics">
 <node CREATED="1512955835004" ID="ID_1672462866" MODIFIED="1512955835004">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -207,8 +207,197 @@
       <font face="Courier New">}</font>
     </p>
   </body>
+</html></richcontent>
+</node>
+</node>
+<node CREATED="1513010799231" ID="ID_1029437258" MODIFIED="1513010799231">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <img src="LearningZeroMQ_4455043492294881194.jpeg" />
+  </body>
 </html>
 </richcontent>
+<node CREATED="1513010814925" ID="ID_1631274621" MODIFIED="1513010818028" TEXT="Demo">
+<node CREATED="1513010822333" ID="ID_1573552824" MODIFIED="1513010824966" TEXT="Server">
+<node CREATED="1513010861240" ID="ID_1686899880" MODIFIED="1513010893354">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font face="Courier New">int main() { </font>
+    </p>
+    <p>
+      <font face="Courier New">void *context = zmq_ctx_new(); </font>
+    </p>
+    <p>
+      <font face="Courier New">void *publisher = zmq_socket(context, ZMQ_PUB); </font>
+    </p>
+    <p>
+      <font face="Courier New">int rc = zmq_bind(publisher, &quot;tcp://*:5556&quot;); </font>
+    </p>
+    <p>
+      <font face="Courier New">assert(rc == 0); </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">srand((unsigned)time(NULL)); </font>
+    </p>
+    <p>
+      <font face="Courier New">while (true) { </font>
+    </p>
+    <p>
+      <font face="Courier New">int zipcode = rand() * 1000; </font>
+    </p>
+    <p>
+      <font face="Courier New">int temperature = rand() * 215 - 80; </font>
+    </p>
+    <p>
+      <font face="Courier New">int relhumidity = rand() * 50 + 10; </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">char update[200]; </font>
+    </p>
+    <p>
+      <font face="Courier New">sprintf_s(update, &quot;%05d %d %d&quot;, zipcode, temperature, relhumidity); </font>
+    </p>
+    <p>
+      <font face="Courier New">s_send(publisher, update, 200); </font>
+    </p>
+    <p>
+      <font face="Courier New">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">zmq_close(publisher); </font>
+    </p>
+    <p>
+      <font face="Courier New">zmq_ctx_destroy(context); </font>
+    </p>
+    <p>
+      <font face="Courier New">return 0; </font>
+    </p>
+    <p>
+      <font face="Courier New">}</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
+<node CREATED="1513010825542" ID="ID_1530356331" MODIFIED="1513010827391" TEXT="Client">
+<node CREATED="1513010912781" ID="ID_1267676050" MODIFIED="1513010926673">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font face="Courier New">int main(int argc, char *argv[]) { </font>
+    </p>
+    <p>
+      <font face="Courier New">printf(&quot;Collecting updates from weather server...\n&quot;); </font>
+    </p>
+    <p>
+      <font face="Courier New">void *context = zmq_ctx_new(); </font>
+    </p>
+    <p>
+      <font face="Courier New">void *subscriber = zmq_socket(context, ZMQ_SUB); </font>
+    </p>
+    <p>
+      <font face="Courier New">int rc = zmq_connect(subscriber, &quot;tcp://localhost:5556&quot;); </font>
+    </p>
+    <p>
+      <font face="Courier New">assert(rc == 0); </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">char* filter = (argc &gt; 1) ? argv[1] : &quot;10001&quot;; </font>
+    </p>
+    <p>
+      <font face="Courier New">rc = zmq_setsockopt(subscriber, ZMQ_SUBSCRIBE, filter, strlen(filter)); </font>
+    </p>
+    <p>
+      <font face="Courier New">assert(rc == 0); </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">int update_nbr; </font>
+    </p>
+    <p>
+      <font face="Courier New">long total_temp = 0; </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">for (update_nbr = 0; update_nbr &lt; 100; update_nbr++) { </font>
+    </p>
+    <p>
+      <font face="Courier New">char *string = s_recv(subscriber); </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">int zipcode, temperature, relhumidity; </font>
+    </p>
+    <p>
+      <font face="Courier New">sscanf_s(string, &quot;%d %d %d&quot;, &amp;zipcode, &amp;temperature, &amp;relhumidity); </font>
+    </p>
+    <p>
+      <font face="Courier New">total_temp += temperature; </font>
+    </p>
+    <p>
+      <font face="Courier New">free(string); </font>
+    </p>
+    <p>
+      <font face="Courier New">} </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">printf(&quot;Average temperature for zipcode '%s' was %dF\n&quot;, filter, (int)(total_temp / update_nbr)); </font>
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      <font face="Courier New">zmq_close(subscriber); </font>
+    </p>
+    <p>
+      <font face="Courier New">zmq_ctx_destroy(context); </font>
+    </p>
+    <p>
+      <font face="Courier New">getchar(); </font>
+    </p>
+    <p>
+      <font face="Courier New">return 0; </font>
+    </p>
+    <p>
+      <font face="Courier New">}</font>
+    </p>
+  </body>
+</html>
+</richcontent>
+</node>
+</node>
 </node>
 </node>
 </node>

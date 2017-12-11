@@ -12,12 +12,12 @@
   </body>
 </html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1512922087625" ID="ID_1156584433" MODIFIED="1512922092682" POSITION="right" TEXT="Preface">
+<node CREATED="1512922087625" FOLDED="true" ID="ID_1156584433" MODIFIED="1512957269349" POSITION="right" TEXT="Preface">
 <node CREATED="1512922110780" ID="ID_471386001" MODIFIED="1512922151419" TEXT="0MQ looks like an embeddable networking library but acts like a concurrency framework."/>
 <node CREATED="1512922163547" ID="ID_1677517595" MODIFIED="1512922231308" TEXT="It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast."/>
 <node CREATED="1512922255835" ID="ID_752796737" MODIFIED="1512922317760" TEXT="Can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply."/>
 </node>
-<node CREATED="1512922093229" ID="ID_131248346" MODIFIED="1512956070871" POSITION="right" TEXT="Basics">
+<node CREATED="1512922093229" FOLDED="true" ID="ID_131248346" MODIFIED="1512957271386" POSITION="right" TEXT="Basics">
 <node CREATED="1512955835004" ID="ID_1672462866" MODIFIED="1512955835004">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -26,8 +26,7 @@
   <body>
     <img src="LearningZeroMQ_483166959022450673.jpeg" />
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1512955853320" ID="ID_1722996814" MODIFIED="1512956105218" TEXT="Demo">
 <node CREATED="1512955867375" ID="ID_199990953" MODIFIED="1512956073027" TEXT="Sever">
 <node CREATED="1512955912414" ID="ID_1239230693" MODIFIED="1512955932805">
@@ -179,6 +178,40 @@
 </node>
 </node>
 </node>
+<node CREATED="1512957066760" ID="ID_555851160" MODIFIED="1512957082213" TEXT="Version Reporting">
+<node CREATED="1512957084322" ID="ID_1607994547" MODIFIED="1512957096894">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <font face="Courier New">int main() { </font>
+    </p>
+    <p>
+      <font face="Courier New">int major, minor, patch; </font>
+    </p>
+    <p>
+      <font face="Courier New">zmq::version(&amp;major, &amp;minor, &amp;patch); </font>
+    </p>
+    <p>
+      <font face="Courier New">std::cout &lt;&lt; &quot;Current 0MQ version is: &quot; &lt;&lt; major &lt;&lt; &quot;.&quot; &lt;&lt; minor &lt;&lt; &quot;.&quot; &lt;&lt; patch &lt;&lt; std::endl; </font>
+    </p>
+    <p>
+      <font face="Courier New">getchar(); </font>
+    </p>
+    <p>
+      <font face="Courier New">return 0; </font>
+    </p>
+    <p>
+      <font face="Courier New">}</font>
+    </p>
+  </body>
+</html>
+</richcontent>
 </node>
+</node>
+</node>
+<node CREATED="1512957062074" ID="ID_386357702" MODIFIED="1512957062074" POSITION="right" TEXT=""/>
 </node>
 </map>

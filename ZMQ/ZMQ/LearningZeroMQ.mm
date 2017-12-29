@@ -12,22 +12,27 @@
   </body>
 </html></richcontent>
 <font BOLD="true" NAME="SansSerif" SIZE="12"/>
-<node CREATED="1512922087625" FOLDED="true" ID="ID_1156584433" MODIFIED="1512957269349" POSITION="right" TEXT="Preface">
+<node CREATED="1512922087625" FOLDED="true" ID="ID_1156584433" MODIFIED="1514364466011" POSITION="right" TEXT="Preface">
+<icon BUILTIN="full-0"/>
 <node CREATED="1512922110780" ID="ID_471386001" MODIFIED="1512922151419" TEXT="0MQ looks like an embeddable networking library but acts like a concurrency framework."/>
 <node CREATED="1512922163547" ID="ID_1677517595" MODIFIED="1512922231308" TEXT="It gives you sockets that carry atomic messages across various transports like in-process, inter-process, TCP, and multicast."/>
 <node CREATED="1512922255835" ID="ID_752796737" MODIFIED="1512922317760" TEXT="Can connect sockets N-to-N with patterns like fan-out, pub-sub, task distribution, and request-reply."/>
 </node>
-<node CREATED="1512922093229" ID="ID_131248346" MODIFIED="1513003104576" POSITION="right" TEXT="Basics">
-<node CREATED="1512955835004" ID="ID_1672462866" MODIFIED="1512955835004">
+<node CREATED="1512922093229" ID="ID_131248346" MODIFIED="1514364470416" POSITION="right" TEXT="Basics">
+<icon BUILTIN="full-1"/>
+<node CREATED="1512955835004" ID="ID_1672462866" MODIFIED="1514364639943">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
-    <img src="LearningZeroMQ_483166959022450673.jpeg" />
+    <p>
+      <img src="LearningZeroMQ_483166959022450673.jpeg" width="200" height="300" />
+    </p>
   </body>
-</html></richcontent>
-<node CREATED="1512955853320" ID="ID_1722996814" MODIFIED="1512956105218" TEXT="Demo">
+</html>
+</richcontent>
+<node CREATED="1512955853320" FOLDED="true" ID="ID_1722996814" MODIFIED="1514364675809" TEXT="Demo">
 <node CREATED="1512955867375" ID="ID_199990953" MODIFIED="1512956073027" TEXT="Sever">
 <node CREATED="1512955912414" ID="ID_1239230693" MODIFIED="1512955932805">
 <richcontent TYPE="NODE"><html>
@@ -178,7 +183,7 @@
 </node>
 </node>
 </node>
-<node CREATED="1512957066760" ID="ID_555851160" MODIFIED="1512957082213" TEXT="Version Reporting">
+<node CREATED="1512957066760" FOLDED="true" ID="ID_555851160" MODIFIED="1514364671738" TEXT="Version Reporting">
 <node CREATED="1512957084322" ID="ID_1607994547" MODIFIED="1512957096894">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -210,18 +215,20 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1513010799231" ID="ID_1029437258" MODIFIED="1513010799231">
+<node CREATED="1513010799231" ID="ID_1029437258" MODIFIED="1514364666694">
 <richcontent TYPE="NODE"><html>
   <head>
     
   </head>
   <body>
-    <img src="LearningZeroMQ_4455043492294881194.jpeg" />
+    <p>
+      <img src="LearningZeroMQ_4455043492294881194.jpeg" width="300" height="300" />
+    </p>
   </body>
 </html>
 </richcontent>
 <node CREATED="1513010814925" ID="ID_1631274621" MODIFIED="1513010818028" TEXT="Demo">
-<node CREATED="1513010822333" ID="ID_1573552824" MODIFIED="1513010824966" TEXT="Server">
+<node CREATED="1513010822333" FOLDED="true" ID="ID_1573552824" MODIFIED="1514364723810" TEXT="Server">
 <node CREATED="1513010861240" ID="ID_1686899880" MODIFIED="1513010893354">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -292,11 +299,10 @@
       <font face="Courier New">}</font>
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
-<node CREATED="1513010825542" ID="ID_1530356331" MODIFIED="1513010827391" TEXT="Client">
+<node CREATED="1513010825542" FOLDED="true" ID="ID_1530356331" MODIFIED="1514364717458" TEXT="Client">
 <node CREATED="1513010912781" ID="ID_1267676050" MODIFIED="1513010926673">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -394,10 +400,24 @@
       <font face="Courier New">}</font>
     </p>
   </body>
+</html></richcontent>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1514364801381" ID="ID_801206523" MODIFIED="1514365025040" TEXT="Parallel Pipeline">
+<node CREATED="1514364805442" ID="ID_1125840137" MODIFIED="1514364906855">
+<richcontent TYPE="NODE"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      <img src="LearningZeroMQ_1895528256595019579.jpeg" width="300" height="350" />
+    </p>
+  </body>
 </html>
 </richcontent>
-</node>
-</node>
 </node>
 </node>
 </node>

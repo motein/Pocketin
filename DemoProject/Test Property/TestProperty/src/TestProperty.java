@@ -25,6 +25,6 @@ public class TestProperty {
 		prop.setProperty("hello", "1");
 		prop.setProperty("world", "2");
 		prop.store(oFile, "The New properties file");
-		 oFile.close();
+		oFile.close();
 	}
 }

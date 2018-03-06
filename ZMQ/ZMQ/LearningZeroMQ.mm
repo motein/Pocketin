@@ -30,8 +30,7 @@
       <img src="LearningZeroMQ_483166959022450673.jpeg" width="200" height="300" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1512955853320" FOLDED="true" ID="ID_1722996814" MODIFIED="1514364675809" TEXT="Demo">
 <node CREATED="1512955867375" ID="ID_199990953" MODIFIED="1512956073027" TEXT="Sever">
 <node CREATED="1512955912414" ID="ID_1239230693" MODIFIED="1512955932805">
@@ -225,8 +224,7 @@
       <img src="LearningZeroMQ_4455043492294881194.jpeg" width="300" height="300" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 <node CREATED="1513010814925" ID="ID_1631274621" MODIFIED="1513010818028" TEXT="Demo">
 <node CREATED="1513010822333" FOLDED="true" ID="ID_1573552824" MODIFIED="1514364723810" TEXT="Server">
 <node CREATED="1513010861240" ID="ID_1686899880" MODIFIED="1513010893354">
@@ -302,7 +300,7 @@
 </html></richcontent>
 </node>
 </node>
-<node CREATED="1513010825542" FOLDED="true" ID="ID_1530356331" MODIFIED="1514364717458" TEXT="Client">
+<node CREATED="1513010825542" ID="ID_1530356331" MODIFIED="1516520210902" TEXT="Client">
 <node CREATED="1513010912781" ID="ID_1267676050" MODIFIED="1513010926673">
 <richcontent TYPE="NODE"><html>
   <head>
@@ -416,8 +414,7 @@
       <img src="LearningZeroMQ_1895528256595019579.jpeg" width="300" height="350" />
     </p>
   </body>
-</html>
-</richcontent>
+</html></richcontent>
 </node>
 </node>
 </node>

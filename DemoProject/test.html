@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>UseSwap</title>
+        <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$("button").click(function () {
+					try {
+						$.ajax({
+							type:"POST",
+							contentType:"application/json; charset=utf-8",
+							url:"http://localhost:8088/books/y",
+							dataType:"json",
+							async: false,
+                            data:'{"bookId" : 21,"bookName" :"SUCCESS"}',
+							success: function (result) {
+								alert("Success");
+							},
+							error:function(XMLHttpRequest, textStatus, errorThrown) {
+								alert(errorThrown + ':' + textStatus);
+							}
+						})
+					}
+					catch (ex) {
+						alert(ex);
+					}
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<button >Execute</button>
+	</body>
+</html>

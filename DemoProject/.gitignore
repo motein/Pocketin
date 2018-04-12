@@ -12,3 +12,5 @@
 /Log4JTest/.recommenders/*/
 /Log4JTest/.metadata/*/
 /micro/target/*/
+/FileUpload/.settings/*
+/FileUpload/target/*

@@ -12,6 +12,8 @@ import requests
 from time import sleep
 import matplotlib
 import matplotlib.pyplot as plt
+from urllib.request import urlopen, quote
+import hashlib
 
 def loadDataSet(fileName):
     dataMat = []
@@ -98,12 +100,38 @@ def geoGrab(stAddress, city):
     params = {}
     params['address'] = '%s %s' % (stAddress, city)
     url_params = urllib.parse.urlencode(params)
-    yahooApi = apiStem + url_params      #print url_params
-    print(yahooApi)
-    response = requests.get(yahooApi)
+    googleApi = apiStem + url_params      #print url_params
+    print(googleApi)
+    response = requests.get(googleApi)
     resp_json = response.json()
 #     return resp_json['results'][0]['geometry']['location']
     return resp_json
+
+def geoGrabFromBaidu(stAddress):
+    apiStem = 'https://api.map.baidu.com/geocoder/v2/?'  #create a dict and constants for the goecoder
+    ak = 'Ws3VbrelSruFeyTiprO5QGCBTsF4wAX0'
+    baiduApi = apiStem + "address=%s&output=json&ak=%s" % (stAddress, ak)
+    print(baiduApi)
+    response = requests.get(baiduApi)
+    return response.json()
+
+def geoGrabFromBaidu2(stAddress):
+    header = 'https://api.map.baidu.com'
+    ak = 'Ws3VbrelSruFeyTiprO5QGCBTsF4wAX0'
+    sk = 'Cr9ypbtIG2G7aN4D5pGCF1Ow9N7T1fyc'
+    
+    queryStr = '/geocoder/v2/?address=%s&output=json&ak=%s' % (stAddress, ak)
+    encodedStr = urllib.parse.quote(queryStr, safe="/:=&?#+!$,;'@()*[]")
+    
+    rawStr = encodedStr + sk
+    encodedStr = urllib.parse.quote_plus(rawStr)
+    encodedStr = encodedStr.encode(encoding='utf_8')
+    sn = hashlib.md5(encodedStr).hexdigest()
+    
+    baiduApi = header + queryStr + "&sn=%s" % (sn)
+    print(baiduApi)
+    response = requests.get(baiduApi)
+    return response.json()
 
 def massPlaceFind(fileName):
     fw = open('places.txt', 'w')

@@ -27,6 +27,10 @@ class Pair<T> {
     private T min;
     private T max;
 
+    public Pair(){
+        
+    }
+
     public Pair(T min, T max) {
         this.min = min;
         this.max = max;
@@ -38,5 +42,13 @@ class Pair<T> {
 
     public T getSecond() {
         return this.max;
+    }
+
+    public void setFirst(T t) {
+        this.min = t;
+    }
+
+    public void setSecond(T t) {
+        this.max = t;
     }
 }

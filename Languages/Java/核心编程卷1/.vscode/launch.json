@@ -6,7 +6,42 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) - Current File",
+            "name": "Launch 测试JFrame",
+            "request": "launch",
+            "mainClass": "测试JFrame",
+            "projectName": "核心编程卷1_93a4a212"
+        },
+        {
+            "type": "java",
+            "name": "Launch 测试优先级队列",
+            "request": "launch",
+            "mainClass": "测试优先级队列",
+            "projectName": "核心编程卷1_93a4a212"
+        },
+        {
+            "type": "java",
+            "name": "Launch 测试TreeSet",
+            "request": "launch",
+            "mainClass": "测试TreeSet",
+            "projectName": "核心编程卷1_93a4a212"
+        },
+        {
+            "type": "java",
+            "name": "Launch TreeSet测试",
+            "request": "launch",
+            "mainClass": "TreeSet测试",
+            "projectName": "核心编程卷1_93a4a212"
+        },
+        {
+            "type": "java",
+            "name": "Launch 链表测试",
+            "request": "launch",
+            "mainClass": "链表测试",
+            "projectName": "核心编程卷1_93a4a212"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
         },

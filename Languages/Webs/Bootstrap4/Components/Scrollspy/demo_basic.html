@@ -1,0 +1,111 @@
+<html lang = "en">
+   <head>
+      <!-- Meta tags -->
+      <meta charset = "utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+      
+      <!-- Bootstrap CSS -->
+      <link rel = "stylesheet" 
+         href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+         crossorigin = "anonymous">
+      
+      <title>Bootstrap 4 Example</title>
+      <style>
+         #Scrollspy {
+         position: relative; 
+            overflow-y: scroll;
+            height: 300px;
+         }
+         #Scrollspynested {
+            height: 200px;
+            overflow-y: scroll;
+         }
+         #container {
+            overflow: hidden;
+         }
+      </style>
+   </head>
+   <!-- as Scrollspy shows, it spies on Scrollbar -->
+   <body>
+      <div class = "container-fluid">
+         <h2>Scrollspy</h2>
+         <div id = "Scrollspy" data-spy = "scroll" data-target = ".navbar" data-offset = "50">
+            <nav class = "navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+               <ul class = "navbar-nav">
+                  <li class = "nav-item">
+                     <a class = "nav-link" href = "#section1">Section 1</a>
+                  </li>
+                  <li class = "nav-item">
+                     <a class = "nav-link" href = "#section2">Section 2</a>
+                  </li>
+                  <li class = "nav-item">
+                     <a class = "nav-link" href = "#section3">Section 3</a>
+                  </li>
+                  <li class = "nav-item dropdown">
+                     <a class = "nav-link dropdown-toggle" href = "#" 
+                        id = "navbardrop" data-toggle = "dropdown">
+                        
+                        Section 4
+                     </a>
+                     <div class = "dropdown-menu">
+                        <a class = "dropdown-item" href = "#section41">Link 1</a>
+                        <a class = "dropdown-item" href = "#section42">Link 2</a>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+            
+            <div id = "section1" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 1</h1>
+               <p>Cotent for section #1</p>
+            </div>
+            
+            <div id = "section2" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 2</h1>
+               <p>Cotent for section #2</p>
+            </div>
+            
+            <div id = "section3" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 3</h1>
+               <p>Cotent for section #3</p>
+            </div>
+            
+            <div id = "section41" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 4 Submenu 1</h1>
+               <p>Cotent for section #4.1</p>
+            </div>
+            
+            <div id = "section42" class = "container-fluid" 
+               style = "padding-top:70px;padding-bottom:70px">
+               <h1>This is Section 4 Submenu 2</h1>
+               <p>Cotent for section #4.2</p>
+            </div>
+            
+         </div>
+      </div>
+      
+      <!-- jQuery library -->
+      <script src = "https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+         integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <!-- Popper -->
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+         integrity = "sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+         crossorigin = "anonymous">
+      </script>
+      
+      <!-- Latest compiled and minified Bootstrap JavaScript -->
+      <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+         integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+         crossorigin = "anonymous">
+      </script>
+      
+   </body>
+</html>
